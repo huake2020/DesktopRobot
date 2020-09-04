@@ -127,6 +127,14 @@ int main(void)
   Right_Wheel.Set_Dire=Right_Wheel_Set_Dire;
   Right_Wheel.Set_Speed=Right_Wheel_Set_Speed;
   Wheel_Init();
+
+  Left_Encoder.Get_dire=Letf_Encoder_Get_dire;
+  Left_Encoder.Get_number=Letf_Encoder_Get_number;
+  Left_Encoder.Set_number=Letf_Encoder_Set_number;
+  Right_Encoder.Get_dire=Right_Encoder_Get_dire;
+  Right_Encoder.Get_number=Right_Encoder_Get_number;
+  Right_Encoder.Set_number=Right_Encoder_Set_number;
+  Encoder_Init();
   
   PC_SerialPort.tx_data=TxBuffer;
   PC_SerialPort.rx_data=RxBuffer;

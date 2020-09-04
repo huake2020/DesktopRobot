@@ -1,10 +1,10 @@
 /*
  * @Author: Wang YongChao
  * @Date: 2020-08-30 15:54:56
- * @LastEditTime: 2020-09-02 23:27:27
+ * @LastEditTime: 2020-09-05 00:38:01
  * @LastEditors: Wang YongChao
  * @Description: 
- * @FilePath: \Vector_Low\MyCode\Inc\board.h
+ * @FilePath: \DesktopRobot\Vector_Low\MyCode\Inc\board.h
  * @开源机器人项目
  */
 /*
@@ -103,6 +103,7 @@ typedef struct
     uint32_t number;
     Dire_t (*Get_dire)(void);
     uint32_t (*Get_number)(void);
+    void (*Set_number)(uint32_t number);
 }Encoder_t;
 
 
@@ -113,7 +114,7 @@ Led_t Led;
 Wheel_t Left_Wheel;
 Wheel_t Right_Wheel;
 SerialPort_t PC_SerialPort;
-Encoder_t Letf_Encoder;
+Encoder_t Left_Encoder;
 Encoder_t Right_Encoder;
 /* Private function prototypes -----------------------------------------------*/
 
@@ -122,6 +123,7 @@ void Board_Init(void);
 void Led_Init(void);
 void Wheel_Init(void);
 void SerialPort_Init(void);
+void Encoder_Init(void);
 
 #ifdef __cplusplus
 }

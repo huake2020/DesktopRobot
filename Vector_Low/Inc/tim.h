@@ -1,10 +1,10 @@
 /*
  * @Author: Wang YongChao
  * @Date: 2020-09-01 20:47:16
- * @LastEditTime: 2020-09-02 23:18:42
+ * @LastEditTime: 2020-09-05 00:42:10
  * @LastEditors: Wang YongChao
  * @Description: 
- * @FilePath: \Vector_Low\Inc\tim.h
+ * @FilePath: \DesktopRobot\Vector_Low\Inc\tim.h
  * @开源机器人项目
  */
 /**
@@ -55,9 +55,17 @@ void HAL_TIM_MspPostInit(TIM_HandleTypeDef *htim);
 
 /* USER CODE BEGIN Prototypes */
 void Board_PWM_Init(void);
+void Board_ENCODER_Init(void);
+
 void Left_Wheel_Set_Speed(uint32_t speed);
 void Right_Wheel_Set_Speed(uint32_t speed);
-void Board_ENCODER_Init(void);
+
+Dire_t Letf_Encoder_Get_dire(void);
+Dire_t Right_Encoder_Get_dire(void);
+uint32_t Letf_Encoder_Get_number(void);
+uint32_t Right_Encoder_Get_number(void);
+void Letf_Encoder_Set_number(uint32_t number);
+void Right_Encoder_Set_number(uint32_t number);
 /* USER CODE END Prototypes */
 
 #ifdef __cplusplus

@@ -357,7 +357,47 @@ void Right_Wheel_Set_Speed(uint32_t speed)
   __HAL_TIM_SET_COMPARE(&htim2, TIM_CHANNEL_2, speed);
 }
 
+Dire_t Letf_Encoder_Get_dire(void)
+{
+  if (__HAL_TIM_IS_TIM_COUNTING_DOWN(&htim3))
+  {
+    return BACK;
+  }else
+  {
+    return FRONT;
+  }
+}
 
+Dire_t Right_Encoder_Get_dire(void)
+{
+  if (__HAL_TIM_IS_TIM_COUNTING_DOWN(&htim4))
+  {
+    return BACK;
+  }else
+  {
+    return FRONT;
+  }
+}
+
+uint32_t Letf_Encoder_Get_number(void)
+{
+  return __HAL_TIM_GET_COUNTER(&htim3);
+}
+
+uint32_t Right_Encoder_Get_number(void)
+{
+  return __HAL_TIM_GET_COUNTER(&htim4);
+}
+
+void Letf_Encoder_Set_number(uint32_t number)
+{
+  __HAL_TIM_SET_COUNTER(&htim3,number);
+}
+
+void Right_Encoder_Set_number(uint32_t number)
+{
+  __HAL_TIM_SET_COUNTER(&htim4,number);
+}
 
 /* USER CODE END 1 */
 

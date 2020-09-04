@@ -1,10 +1,10 @@
 /*
  * @Author: Wang YongChao
  * @Date: 2020-08-30 15:54:45
- * @LastEditTime: 2020-09-02 23:20:03
+ * @LastEditTime: 2020-09-05 00:41:43
  * @LastEditors: Wang YongChao
  * @Description: 
- * @FilePath: \Vector_Low\MyCode\Src\board.c
+ * @FilePath: \DesktopRobot\Vector_Low\MyCode\Src\board.c
  * @开源机器人项目
  */
 /* Private includes ----------------------------------------------------------*/
@@ -51,4 +51,10 @@ void Wheel_Init(void)
 void SerialPort_Init(void)
 {
     PC_SerialPort.Receive_Data(PC_SerialPort.rx_data,PC_SerialPort.rx_len);
+}
+
+void Encoder_Init(void)
+{
+    Left_Encoder.Set_number(0);
+    Right_Encoder.Set_number(0);
 }
