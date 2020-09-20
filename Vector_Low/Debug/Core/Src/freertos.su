@@ -1,0 +1,17 @@
+freertos.c:263:6:MX_FREERTOS_Init	8	static
+freertos.c:390:6:StartDefaultTask	32	static
+freertos.c:496:6:StartTaskLeftWheelSpeed	24	static
+freertos.c:521:6:StartTaskRightWheelSpeed	24	static
+freertos.c:546:6:StartTaskLeftEncoder	24	static
+freertos.c:573:6:StartTaskRightEncoder	24	static
+freertos.c:600:6:StartTaskMPU6050	16	static
+freertos.c:618:6:StartTaskVL53L0	16	static
+freertos.c:636:6:StartTaskVL6180X	16	static
+freertos.c:654:6:StartTaskTouch	24	static
+freertos.c:680:6:StartTaskGoHome	24	static
+freertos.c:706:6:StartTaskUpdate	16	static
+freertos.c:724:6:StartTaskUsartDate	16	static
+freertos.c:742:6:StartTaskLeftWheelDire	24	static
+freertos.c:767:6:StartTaskRightWheelDire	24	static
+freertos.c:792:6:StartTaskPowerButton	24	static
+freertos.c:818:6:StartTaskRgbLed	24	static

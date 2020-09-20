@@ -1,0 +1,8 @@
+freertos.c:167:6:MX_FREERTOS_Init	8	static
+freertos.c:235:6:StartDefaultTask	24	static
+freertos.c:275:6:StartLedPowerTask	24	static
+freertos.c:301:6:StartLeftDireTask	24	static
+freertos.c:326:6:StartLeftSpeedTask	24	static
+freertos.c:340:6:StartRightDireTask	24	static
+freertos.c:365:6:StartRightSpeedTask	24	static
+freertos.c:379:6:StartPcTxDataTask	24	static
