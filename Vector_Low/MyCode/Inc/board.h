@@ -1,8 +1,8 @@
 /*
  * @Author: Wang YongChao
  * @Date: 2020-08-30 15:54:56
- * @LastEditTime: 2020-09-05 00:38:01
- * @LastEditors: Wang YongChao
+ * @LastEditTime: 2020-09-20 17:20:04
+ * @LastEditors: Please set LastEditors
  * @Description: 
  * @FilePath: \DesktopRobot\Vector_Low\MyCode\Inc\board.h
  * @开源机器人项目
@@ -50,6 +50,7 @@
 #endif
 /* Private includes ----------------------------------------------------------*/
 #include "stdio.h"
+#include "main.h"
 /* Private macro -------------------------------------------------------------*/
 
 /* Exported types ------------------------------------------------------------*/
@@ -64,6 +65,12 @@ typedef enum
     FRONT=0,
     BACK
 }Dire_t;
+
+typedef enum
+{
+    UP=0,
+    Down
+}Updown_t;
 
 typedef struct
 {
@@ -106,16 +113,27 @@ typedef struct
     void (*Set_number)(uint32_t number);
 }Encoder_t;
 
+typedef struct 
+{
+    Updown_t updown;
+    Updown_t (*Get_updown)(void);
+}Button_t;
 
 /* Private variables ---------------------------------------------------------*/
 
 Board_t Board;
 Led_t Led;
+Led_t Led_R;
+Led_t Led_G;
+Led_t Led_B;
 Wheel_t Left_Wheel;
 Wheel_t Right_Wheel;
 SerialPort_t PC_SerialPort;
 Encoder_t Left_Encoder;
 Encoder_t Right_Encoder;
+Button_t Power_Button;
+Button_t Touch_Button;
+Button_t GoHome_Button;
 /* Private function prototypes -----------------------------------------------*/
 
 void Board_Init(void);

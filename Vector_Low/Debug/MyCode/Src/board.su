@@ -1,4 +1,5 @@
 board.c:20:6:Board_Init	8	static
-board.c:32:6:Led_Init	8	static
-board.c:42:6:Wheel_Init	8	static
-board.c:50:6:SerialPort_Init	8	static
+board.c:33:6:Led_Init	8	static
+board.c:43:6:Wheel_Init	8	static
+board.c:51:6:SerialPort_Init	8	static
+board.c:56:6:Encoder_Init	8	static

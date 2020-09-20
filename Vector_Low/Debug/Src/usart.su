@@ -1,8 +1,0 @@
-usart.c:33:6:MX_USART1_UART_Init	8	static
-usart.c:51:6:HAL_UART_MspInit	40	static
-usart.c:120:6:HAL_UART_MspDeInit	16	static
-usart.c:152:6:Board_USART_Init	4	static
-usart.c:157:6:PC_SerialPort_Transmit_Data	16	static
-usart.c:164:6:PC_SerialPort_Receive_Data	16	static
-usart.c:179:6:HAL_UART_TxCpltCallback	16	static
-usart.c:191:6:HAL_UART_RxCpltCallback	16	static

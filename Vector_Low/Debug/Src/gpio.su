@@ -1,5 +1,0 @@
-gpio.c:40:6:MX_GPIO_Init	40	static
-gpio.c:84:6:Board_GPIO_Init	8	static
-gpio.c:93:6:Led_Set_Power	16	static
-gpio.c:108:6:Left_Wheel_Set_Dire	16	static
-gpio.c:124:6:Right_Wheel_Set_Dire	16	static
